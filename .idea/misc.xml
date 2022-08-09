@@ -3,7 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/janeo/AndroidStudioProjects/Mific/app/src/main/res/layout/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Mific/app/src/main/res/font/custom_font.xml" value="0.296875" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Mific/app/src/main/res/font/raleway_medium.xml" value="0.29765625" />
+        <entry key="..\:/Users/janeo/AndroidStudioProjects/Mific/app/src/main/res/layout/activity_main.xml" value="0.275" />
       </map>
     </option>
   </component>

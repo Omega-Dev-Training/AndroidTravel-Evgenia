@@ -152,6 +152,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:fontFamily="sans-serif-medium"
         android:text="Attractions"
         android:textColor="@android:color/black"
         android:textSize="12dp"
@@ -178,6 +179,7 @@
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:background="@android:color/transparent"
+        android:fontFamily="More Fonts..."
         android:text="Need to know"
         android:textColor="@android:color/black"
         android:textSize="12dp"
@@ -186,8 +188,8 @@
         app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/button3"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintHeight_percent="0.16"/>
+        app:layout_constraintHeight_percent="0.16"
+        app:layout_constraintStart_toEndOf="@+id/button" />
 
     <View
         android:layout_width="1dp"
