@@ -16,7 +16,7 @@ tools:context=".MainActivity">
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/age" />
+        app:srcCompat="@drawable/Rim" />
 
     <TextView
         android:id="@+id/textView"
@@ -153,12 +153,12 @@ tools:context=".MainActivity">
         android:id="@+id/button"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/transparent"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/raleway_semibold"
         android:text="Attractions"
         android:textColor="@android:color/black"
         android:textSize="12dp"
-        app:icon="@drawable/map_pin"
+        app:icon="@drawable/map"
         app:iconGravity="textTop"
         app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -174,19 +174,18 @@ tools:context=".MainActivity">
         app:layout_constraintEnd_toStartOf="@+id/button3"
         app:layout_constraintStart_toEndOf="@+id/button4"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:background="@drawable/line"/>
+        android:background="#E6E6E6"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button4"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/transparent"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/raleway_semibold"
         android:text="Need to know"
         android:textColor="@android:color/black"
-
         android:textSize="12dp"
-        app:icon="@drawable/briefcase2"
+        app:icon="@drawable/chemodan"
         app:iconGravity="textTop"
         app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -201,18 +200,18 @@ tools:context=".MainActivity">
         app:layout_constraintEnd_toStartOf="@+id/button4"
         app:layout_constraintStart_toEndOf="@+id/button"
         app:layout_constraintTop_toBottomOf="@+id/imageView"
-        android:background="@drawable/line"/>
+        android:background="#E6E6E6"/>
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button3"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:background="@android:color/transparent"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/raleway_semibold"
         android:text="More"
         android:textColor="@android:color/black"
         android:textSize="12dp"
-        app:icon="@drawable/menu_hamburger"
+        app:icon="@drawable/menu"
         app:iconGravity="textTop"
         app:iconTint="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -223,7 +222,7 @@ tools:context=".MainActivity">
     <View
         android:layout_width="0dp"
         android:layout_height="1dp"
-        android:background="@drawable/line"
+        android:background="#E6E6E6"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
