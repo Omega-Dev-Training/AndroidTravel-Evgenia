@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="pravo"><u>Sign up</u></string>
+    <string name="levo"><u>Forgot Password?</u></string>
+</resources>

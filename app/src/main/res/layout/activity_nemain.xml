@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cinnabon" />
@@ -24,21 +25,142 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="80dp"
         android:fontFamily="@font/poppins_bold"
-        android:text="Welcome back"
+        android:text="Welcome\nback"
+        android:minLines="2"
         android:textColor="#854E34"
         android:textSize="34dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/log"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_percent="0.5"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/logg" />
 
+    <TextView
+        android:id="@+id/pls"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Please Sign In"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/log"
+        app:layout_constraintTop_toTopOf="@+id/log" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:background="?selectableItemBackground"
+        app:layout_constraintBottom_toTopOf="@+id/log"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/log"
+        app:srcCompat="@drawable/ic_next" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textILEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/log"
+        app:layout_constraintStart_toStartOf="@+id/log"
+        app:layout_constraintTop_toBottomOf="@+id/pls">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="E-mail"
+            android:textColorHighlight="#D9C9C5"
+            android:textSize="14dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textILPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        app:layout_constraintEnd_toEndOf="@+id/log"
+        app:layout_constraintStart_toStartOf="@+id/log"
+        app:layout_constraintTop_toBottomOf="@+id/textILEmail"
+        app:passwordToggleDrawable="@drawable/ic_eye"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:hint="Password"
+            android:textSize="14dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:id="@+id/fac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toStartOf="@id/gpls"
+        app:layout_constraintStart_toStartOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@+id/textILPassword"
+        app:srcCompat="@drawable/ic_facebooksvg"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <ImageView
+        android:id="@+id/gpls"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="31dp"
+        app:layout_constraintEnd_toEndOf="@+id/log"
+        app:layout_constraintStart_toEndOf="@id/fac"
+        app:layout_constraintTop_toBottomOf="@+id/textILPassword"
+        app:srcCompat="@drawable/ic_goooleplus" />
+
+    <TextView
+        android:id="@+id/seredina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:text="or continue as Guest"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="10dp"
+        app:layout_constraintEnd_toEndOf="@id/log"
+        app:layout_constraintStart_toStartOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@+id/gpls" />
+
+    <TextView
+        android:id="@+id/levo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/levo"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16dp"
+        android:textColor="#50CAD9"
+        app:layout_constraintBottom_toBottomOf="@id/log"
+        app:layout_constraintStart_toStartOf="@id/log" />
+
+    <TextView
+        android:id="@+id/pravo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="21dp"
+        android:text="@string/pravo"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="16dp"
+        android:textColor="#50CAD9"
+        app:layout_constraintBottom_toBottomOf="@id/log"
+        app:layout_constraintEnd_toEndOf="@id/log" />
 </androidx.constraintlayout.widget.ConstraintLayout>
