@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/cinnabon" />
@@ -60,7 +60,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
-        android:background="?selectableItemBackground"
+        android:background="?selectableItemBackgroundBorderless"
         app:layout_constraintBottom_toTopOf="@+id/log"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/log"
@@ -72,6 +72,8 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:layout_marginVertical="10dp"
+        android:theme="@style/ColorHint"
+        app:hintEnabled="false"
         app:layout_constraintEnd_toEndOf="@+id/log"
         app:layout_constraintStart_toStartOf="@+id/log"
         app:layout_constraintTop_toBottomOf="@+id/pls">
@@ -81,7 +83,7 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="E-mail"
-            android:textColorHighlight="#D9C9C5"
+            android:textColorHint="#D9C9C5"
             android:textSize="14dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -93,7 +95,10 @@
         app:layout_constraintEnd_toEndOf="@+id/log"
         app:layout_constraintStart_toStartOf="@+id/log"
         app:layout_constraintTop_toBottomOf="@+id/textILEmail"
+        android:theme="@style/ColorHint"
+        app:hintEnabled="false"
         app:passwordToggleDrawable="@drawable/ic_eye"
+        app:passwordToggleTint="#D9C9C5"
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
@@ -101,26 +106,29 @@
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:hint="Password"
+            android:textColorHint="#D9C9C5"
             android:textSize="14dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <ImageView
+    <ImageButton
         android:id="@+id/fac"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
         android:layout_marginEnd="15dp"
+        android:background="?selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toStartOf="@id/gpls"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/log"
         app:layout_constraintTop_toBottomOf="@+id/textILPassword"
-        app:srcCompat="@drawable/ic_facebooksvg"
-        app:layout_constraintHorizontal_chainStyle="packed"/>
+        app:srcCompat="@drawable/ic_facebooksvg" />
 
-    <ImageView
+    <ImageButton
         android:id="@+id/gpls"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="31dp"
+        android:background="?selectableItemBackgroundBorderless"
         app:layout_constraintEnd_toEndOf="@+id/log"
         app:layout_constraintStart_toEndOf="@id/fac"
         app:layout_constraintTop_toBottomOf="@+id/textILPassword"
@@ -128,12 +136,16 @@
 
     <TextView
         android:id="@+id/seredina"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="17dp"
-        android:text="or continue as Guest"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/poppins_medium"
+        android:text="@string/Hospitality"
+        android:textAlignment="center"
+        android:textColor="#828282"
         android:textSize="10dp"
+        android:minLines="2"
         app:layout_constraintEnd_toEndOf="@id/log"
         app:layout_constraintStart_toStartOf="@id/log"
         app:layout_constraintTop_toBottomOf="@+id/gpls" />
@@ -143,24 +155,28 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
-        android:layout_marginBottom="21dp"
-        android:text="@string/levo"
+        android:layout_marginBottom="16dp"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/poppins_medium"
-        android:textSize="16dp"
+        android:text="@string/levo"
         android:textColor="#50CAD9"
-        app:layout_constraintBottom_toBottomOf="@id/log"
-        app:layout_constraintStart_toStartOf="@id/log" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/log"
+        app:layout_constraintStart_toStartOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@+id/seredina" />
 
     <TextView
         android:id="@+id/pravo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginBottom="21dp"
-        android:text="@string/pravo"
+        android:layout_marginBottom="16dp"
+        android:background="?selectableItemBackground"
         android:fontFamily="@font/poppins_medium"
-        android:textSize="16dp"
+        android:text="@string/pravo"
         android:textColor="#50CAD9"
-        app:layout_constraintBottom_toBottomOf="@id/log"
-        app:layout_constraintEnd_toEndOf="@id/log" />
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/log"
+        app:layout_constraintEnd_toEndOf="@id/log"
+        app:layout_constraintTop_toBottomOf="@+id/seredina" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="ColorHint" parent="Widget.Design.TextInputLayout">
+        <item name="colorOnSurface">#D9C9C5</item>
+    </style>
+</resources>
